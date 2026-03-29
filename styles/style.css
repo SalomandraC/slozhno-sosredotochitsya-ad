@@ -1,8 +1,7 @@
-/* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
-
 .page {   
   min-height: 100vh;
   min-weight: 100%;
+  background-attachment: fixed;
   overflow-x: hidden;
   font-family: 'IBM Plex Mono', monospace;
   background-color: var(--background-color);
@@ -14,7 +13,7 @@
   background-image: var(--url-header-img);
   background-repeat: no-repeat;
   background-position: center top;
-  background-size: cover;  
+  background-size: cover;
 }
 
 .header {
@@ -144,12 +143,11 @@
   .focus__title {
     font-size: var(--h1-size-tablet);
   }
+
   .header {
     padding: var(--padding-desktop);
   }
-  .focus__title {
-    margin-inline-start: -20px;
-  }
+
   .header::before {
     top: 60px;
     right: 20px;
@@ -227,7 +225,7 @@
   grid-area: h2_reason;
 }
 
-.h2_ordinary  {
+.h2_ordinary {
   font-size: var(--h2-text-size);
   font-weight: var(--h2-text-weight);
   font-family: var(--h2-text-font);
@@ -455,8 +453,6 @@
   place-items: center;    
   overflow: hidden;
 }
-
-
 
 .focus__footer {
   font-family: var(--h1-size-mobile);
