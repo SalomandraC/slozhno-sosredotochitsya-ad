@@ -101,13 +101,13 @@
 .header::before {
   top: 40px;
   right: 10px;
-  border-width: 1px 1px 0 0;
+  border-width: 2px 2px 0 0;
 }
 
 .header::after {
   bottom: 10px;
   left: 10px;
-  border-width: 0 0 1px 1px;
+  border-width: 0 0 2px 2px;
 }
 
 .focus__title {
@@ -448,10 +448,10 @@
   margin-block-start: 40px;
   position: relative;
   width: 100%;
-  max-width: 1440px;           
+  max-width: 1440px;
   aspect-ratio: 1 / 0.75;
   display: grid;
-  place-items: center;    
+  place-items: center;
   overflow: hidden;
 }
 
@@ -479,13 +479,13 @@
 .footer::before {
   top: 10px;
   right: 10px;
-  border-width: 1px 1px 0 0;
+  border-width: 2px 2px 0 0;
 }
 
 .footer::after {
    bottom: 10px;
   left: 10px;
-  border-width: 0 0 1px 1px;
+  border-width: 0 0 2px 2px;
 }
 
 @media (650px > width) {
