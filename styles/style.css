@@ -260,7 +260,7 @@
 }
 
 .a_ordinary {
-  text-shadow: 4px 4px 0 var(--h1-text-color-shadow);
+  text-shadow: 1px 1px 0 var(--h1-text-color-shadow);
 }
 
 .focus_dufficults {
@@ -435,21 +435,41 @@
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.18);
 }
 
-@media (650px > width) {
+@media (max-width: 650px) {
   .picture_section {
     display: flex;
     flex-direction: column;
-    gap: 20px;
-    justify-content: start;
+    gap: 10px;
+  }
+
+  .sunset{
+    width: min(355px, 100%);
+    height: 142px;
+  }
+  .ice-cream {
+    width: min(355px, 100%);
+    height: 355px;
+  }
+  .tape {
+    width: min(355px, 100%);
+    height: 237px;
+  }
+  .books {
+    width: min(355px, 100%);
+    height: 355px;
+  }
+  .street {
+    width: min(355px, 100%);
+    height: 237px;
   }
 }
 
 .footer {
   margin-block-start: 40px;
   position: relative;
-  width: 100%;
+  max-width: 100vh;
+  max-height: 100vw;
   max-width: 1440px;
-  aspect-ratio: 1 / 0.75;
   display: grid;
   place-items: center;
   overflow: hidden;
@@ -483,7 +503,7 @@
 }
 
 .footer::after {
-   bottom: 10px;
+  bottom: 10px;
   left: 10px;
   border-width: 0 0 2px 2px;
 }
