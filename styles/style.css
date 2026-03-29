@@ -161,11 +161,14 @@
 
 @media (width >= 1020px) {
   .header {
+    grid-template-rows: 60px auto 1fr auto 200px 60px;
     grid-template-areas:
     "corner-tl menu menu rec"
     "corner-tl . . ."
     "focus focus focus focus"
     ". . head-description head-description"
+    ". . . ."
+    ". . . .";
   }
   .header__theme-menu-list {
     flex-direction: row;
@@ -379,6 +382,9 @@
   }
 }
 
+.focus_pictures {
+  margin-block-start: 50px;
+}
 
 .picture_section {
   max-width: 100%;
@@ -467,9 +473,8 @@
 .footer {
   margin-block-start: 40px;
   position: relative;
-  max-width: 100vh;
-  max-height: 100vw;
-  max-width: 1440px;
+  min-width: 100vh;
+  min-height: 100vw;
   display: grid;
   place-items: center;
   overflow: hidden;
