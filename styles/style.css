@@ -324,12 +324,6 @@
   grid-template-columns: auto 64%;
 }
 
-@media (width > 1000px) {
-  .focus_recomindations {
-    grid-template-columns: auto 67%;
-  }
-}
-
 .section_recomindations {
   grid-area: section_recomindations;
 }
@@ -362,7 +356,6 @@
   font-weight: 400;
 }
 
-
 @media (650px <= width) {
   .focus_recomindations {
     margin-block-start: 80px;
@@ -374,6 +367,13 @@
       ". eat"
       ". read";
     grid-template-rows: repeat(6, auto);
+  }
+}
+
+@media (width > 1000px) {
+  .focus_recomindations {
+    margin-block-start: 60px;
+    grid-template-columns: auto 67%;
   }
 }
 
