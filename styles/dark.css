@@ -52,7 +52,7 @@
   --background-p-color: var(--accent-color);
   --link-color-shadow: var(--accent-color);
   --h2-text-color: var(--accent-color);
-  --h3-text-color: var(--on-accent-color);       
+  --h3-text-color: var(--on-accent-color);
   --p-text-color: var(--main-text-color);
   --header-text-color: var(--background-color);   
   --url-header-img: var(--background-image-url);
@@ -66,9 +66,9 @@
   --background-p-color: var(--accent-color);
   --link-color-shadow: var(--accent-color);
   --h2-text-color: var(--accent-color);
-  --h3-text-color: var(--on-accent-color);       
+  --h3-text-color: var(--on-accent-color);
   --p-text-color: var(--main-text-color);
-  --header-text-color: var(--background-color);   
+  --header-text-color: var(--background-color);
   --url-header-img: var(--background-image-url);
   --decorative-color: var(--accent-color);
 }

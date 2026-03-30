@@ -122,6 +122,7 @@
   max-block-size: 117px;
   justify-self: end;
   align-self: center;
+  margin-block-start: -20px;
 }
 
 .title-decor {

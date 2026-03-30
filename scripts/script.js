@@ -2,6 +2,8 @@
   const theme = localStorage.getItem('theme');
   if (theme) {
     setTheme(theme);
+  } else {
+    setTheme('dark');
   }
 })();
 
