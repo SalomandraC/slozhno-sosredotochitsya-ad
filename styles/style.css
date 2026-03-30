@@ -472,9 +472,8 @@
 .footer {
   margin-block-start: 40px;
   position: relative;
-  max-width: 100vh;
-  max-height: 100vw;
-  max-width: 1440px;
+  min-width: 100vh;
+  min-height: 100vw;
   display: grid;
   place-items: center;
   overflow: hidden;
@@ -490,6 +489,7 @@
   font-size: var(--h1-size-mobile);
   margin: 0;
 }
+
 .footer::before,
 .footer::after {
   content: "";
