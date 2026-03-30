@@ -502,7 +502,7 @@
   border-width: 0 0 2px 2px;
 }
 
-@media (650px > width) {
+@media (650px <= width) {
   .footer {
     font-size: var(--h1-size-tablet);
     margin-block-start: 60px;
