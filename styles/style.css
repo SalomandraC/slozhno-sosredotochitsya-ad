@@ -79,12 +79,12 @@
 }
 
 .header__theme-menu-button_active {
-  color: var(--h1-text-color);
-  border: 2px solid var(--h1-text-color);
+  color: var(--h2-text-color);
+  border: 2px solid var(--h2-text-color);
 }
 
 .header__theme-menu-button:hover:not(:disabled) {
-  color: var(--h1-text-color);
+  color: var(--h2-text-color);
 }
 
 .header::before,
@@ -99,7 +99,7 @@
 }
 
 .header::before {
-  top: 40px;
+  top: 10px;
   right: 10px;
   border-width: 2px 2px 0 0;
 }
@@ -195,12 +195,12 @@
 }
 
 .focus {
-  padding: var(--padding-mobile);
+  padding: 0px 10px;
 }
 
 @media (width >= 650px) {
   .focus {
-  padding: var(--padding-desktop);
+  padding: 0px 20px;
 }
 }
 
