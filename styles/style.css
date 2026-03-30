@@ -372,8 +372,8 @@
 
 @media (width > 1000px) {
   .focus_recomindations {
-    margin-block-start: 50px;
-    grid-template-columns: auto 67%;
+    margin-block-start: 30px;
+    grid-template-columns: auto 66%;
   }
 }
 
