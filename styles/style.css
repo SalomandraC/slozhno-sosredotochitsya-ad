@@ -518,6 +518,11 @@
     font-size: var(--h1-size-tablet);
     margin-block-start: 60px;
   }
+
+  .focus__footer {
+    font-size: var(--h1-size-tablet);
+  }
+
   .footer::before {
     top: 20px;
     right: 20px;
