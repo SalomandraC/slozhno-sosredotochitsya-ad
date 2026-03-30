@@ -122,7 +122,6 @@
   max-block-size: 117px;
   justify-self: end;
   align-self: center;
-  margin-block-start: -20px;
 }
 
 .title-decor {
@@ -161,7 +160,7 @@
 
 @media (max-width: 1000px) {
   .header-text {
-    transform: translateY(10px);
+      margin-block-start: -40px;
   }
 }
 
