@@ -43,6 +43,10 @@
 
     --url-header-img: url(../images/cover-image-light.png);
   }
+  
+  .theme-light .rec {
+    display: none;
+  }
 }
 
 .theme-light .rec {
