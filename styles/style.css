@@ -239,7 +239,7 @@
 
 @media (width >= 1000px) {
   .focus_reasons {
-    grid-template-columns: auto 65.7%;
+    grid-template-columns: auto 66%;
   }
 }
 
@@ -289,10 +289,6 @@
   font-family: var(--main-font-reg);
   line-height: 23.4px;
   color: var(--main-text-color);
-}
-
-.a_ordinary {
-  text-shadow: 1px 1px 0 var(--accent-color);
 }
 
 .focus_dufficults {
@@ -424,6 +420,7 @@
 .picture_section {
   max-width: 100%;
   aspect-ratio: 1 / 1.13;
+  margin-block-start: 20px;
   width: 100%;
   display: grid;
   grid-template-areas:
@@ -433,7 +430,6 @@
   grid-template-rows: 1fr 1.2fr 1.65fr;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
-  margin-block-start: 15px;
   padding: 0px 0px;
 }
 
@@ -582,7 +578,7 @@
   }
 }
 
-a {
+.a_ordinary {
   color: var(--main-text-color);
   text-shadow: 2px 2px 0px var(--accent-color);
   font-family: var(--main-font-reg);
@@ -591,14 +587,15 @@ a {
   border-bottom: 1px solid transparent;
 }
 
-a:hover {
+.a_ordinary:hover {
   border-bottom-color: var(--main-text-color);
+  cursor: pointer;
 }
 
-a:focus {
+.a_ordinary:focus {
   outline: none;
 }
 
-a:focus-visible {
+.a_ordinary:focus-visible {
   outline: 1px solid var(--main-text-color);
 }
