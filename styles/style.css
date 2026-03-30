@@ -451,13 +451,11 @@
 }
 
 .footer {
-  margin-block-start: 40px;
+  min-block-size: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: relative;
-  min-width: 100vh;
-  min-height: 100vw;
-  display: grid;
-  place-items: center;
-  overflow: hidden;
 }
 
 .focus__footer {
