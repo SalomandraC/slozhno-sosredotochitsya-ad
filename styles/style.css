@@ -372,7 +372,7 @@
 
 @media (width > 1000px) {
   .focus_recomindations {
-    margin-block-start: 30px;
+    margin-block-start: 35px;
     grid-template-columns: auto 66%;
   }
 }
