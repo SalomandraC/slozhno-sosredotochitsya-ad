@@ -1,20 +1,77 @@
-:root.theme-light, 
-.theme-dark .page {
-  --h1-text-color: rgba(219, 0, 255, 1);
-  --h1-text-color-shadow: rgba(255, 0, 112, 1);
+/*
+  Специально для тёмной темы при наличии класса,
+  здесь окажутся стили, которые нужно переопределить принудительно,
+  переключая тему
+*/
 
-  --header-text-color: #000028;
-
-  --background-p-color: #FF0070;
+:root.theme-dark {
+  /* сохраните этот селектор в приведённом виде.
+    Так стили написанные ниже будут иметь больший вес,
+    чем стили в медиазапросе предпочтений пользователя
+  */
   --background-color: #000028;
-
-  --link-color-shadow: #FF0070;
-
+  --accent-color: #FF0070;
+  --decorative-color: #FF0070;
+  --main-title-text-color: #DB00FF;
+  --main-title-text-size: 157px;
+  --main-text-size: 18px;
+  --main-title-shadow-color: #FF0070;
   --button-color: #FF0070;
+  --main-font-reg: 'IBM Plex mono', monospace;
+  --on-accent-color: #000;
+  --main-text-color: #F1B2CE;
+  --background-image-url: url(../images/cover-image-dark.png);
+}
 
-  --h2-text-color: #FF0070;
-  --h3-text-color: #000028;
-  --p-text-color: rgba(241, 178, 206, 1);
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background-color: #000028;
+    --accent-color: #FF0070;
+    --decorative-color: #FF0070;
+    --main-title-text-color: #DB00FF;
+    --main-title-text-size: 157px;
+    --main-text-size: 18px;
+    --main-title-shadow-color: #FF0070;
+    --button-color: #FF0070;
+    --main-font-reg: 'IBM Plex mono', monospace;
+    --on-accent-color: #000;
+    --main-text-color: #F1B2CE;
+    --background-image-url: url(../images/cover-image-dark.png);
+  }
+}
 
-  --url-header-img: url(../images/cover-image-dark.png);
+@media (prefers-color-scheme: theme-auto) {
+  :root {
+    --background-color: #000028;
+    --accent-color: #FF0070;
+    --decorative-color: #FF0070;
+    --main-title-text-color: #DB00FF;
+    --main-title-text-size: 157px;
+    --main-text-size: 18px;
+    --main-title-shadow-color: #FF0070;
+    --button-color: #FF0070;
+    --main-font-reg: 'IBM Plex mono', monospace;
+    --on-accent-color: #000;
+    --main-text-color: #F1B2CE;
+    --background-image-url: url(../images/cover-image-dark.png);
+  }
+}
+
+.theme-dark .page {
+  background-color: var(--background-color);
+  background-image: var(--background-image-url);
+}
+
+:root.theme-dark,
+.theme-dark .page {
+  --h1-text-color: var(--main-title-text-color);
+  --h1-text-color-shadow: var(--main-title-shadow-color);
+  --background-p-color: var(--accent-color);
+  --link-color-shadow: var(--accent-color);
+  --h2-text-color: var(--accent-color);
+  --h3-text-color: var(--on-accent-color);       
+  --p-text-color: var(--main-text-color);
+  --header-text-color: var(--background-color);   
+  --url-header-img: var(--background-image-url);
+  --decorative-color: var(--accent-color);
 }

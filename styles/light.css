@@ -4,6 +4,47 @@
   переключая тему
 */
 
+:root.theme-light {
+  /* сохраните этот селектор в приведённом виде.
+    Так стили написанные ниже будут иметь больший вес,
+    чем стили в медиазапросе предпочтений пользователя
+  */
+  --background-image-url: url(../images/cover-image-light.png);
+  --background-color: #fff;
+  --accent-color: #FF8DCB;
+  --decorative-color: transparent;
+  --main-title-text-color: #FFC2E6;
+  --main-title-text-size: 157px;
+  --main-text-size: 18px;
+  --main-title-shadow-color: #FF8DCB;
+  --button-color: #353430;
+  --main-font-reg: 'IBM Plex mono', monospace;
+  --on-accent-color: #353430;
+  --main-text-color: #353430;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --background-image-url: url(../images/cover-image-light.png);
+    --background-color: #fff;
+    --accent-color: #FF8DCB;
+    --decorative-color: transparent;
+    --main-title-text-color: #FFC2E6;
+    --main-title-text-size: 157px;
+    --main-text-size: 18px;
+    --main-title-shadow-color: #FF8DCB;
+    --button-color: #353430;
+    --main-font-reg: 'IBM Plex mono', monospace;
+    --on-accent-color: #353430;
+    --main-text-color: #353430;
+  }
+}
+
+.theme-light .page {
+  /* Вам также нужно будет написать ряд подобных селекторов */
+  background-color: var(--background-color);
+}
+
 :root.theme-light,
 .theme-light .page {
   --h1-text-color: rgba(255, 194, 230, 1);

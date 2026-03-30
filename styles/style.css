@@ -23,7 +23,7 @@
   display: grid;
   grid-template-rows: 1fr min-content 1fr;
   margin-bottom: 60px;
-  padding-top: 20px;  
+  padding-top: 20px;
 }
 
 .rec {
