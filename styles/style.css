@@ -181,7 +181,7 @@
 
 @media (width >= 650px) {
   .focus {
-  padding: 0px 20px;
+    padding: 0px 20px;
 }
 }
 
@@ -194,7 +194,7 @@
     "multitool multitool"
     "dofamin dofamin";
   grid-template-rows: repeat(3, auto);
-  grid-template-columns: auto 62%;
+  grid-template-columns: auto 64%;
 }
 
 @media (width >= 650px) {
@@ -315,7 +315,7 @@
     "eat eat"
     "read read";
   grid-template-rows: repeat(7, auto);
-  grid-template-columns: auto 62%;
+  grid-template-columns: auto 64%;
 }
 
 .section_recomindations {
@@ -365,6 +365,9 @@
   }
 }
 
+.focus_pictures {
+  margin-block-start: 50px;
+}
 
 .picture_section {
   max-width: 100%;
@@ -380,6 +383,12 @@
   gap: 20px;
   margin-block-start: 10px;
   padding: 0px 0px;
+}
+
+@media (width >= 650px) {
+  .focus_pictures {
+    margin-block-start: 80px;
+  }
 }
 
 .gallery__image {
@@ -477,6 +486,7 @@
   height: 25px;
   border-style: solid;
   border-color: var(--h2-text-color);
+  color: var(--button-color);
   z-index: 1;
 }
 
