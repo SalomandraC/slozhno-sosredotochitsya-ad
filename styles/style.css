@@ -274,7 +274,7 @@
 
 .h3_ordinary {
   font-size: var(--main-text-size);
-  font-weight: 400;
+  font-weight: 700;
   font-family: var(--main-font-reg);
   line-height: 23.4px;
   color: var(--on-accent-color);
