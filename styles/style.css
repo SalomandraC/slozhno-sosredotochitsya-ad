@@ -10,6 +10,11 @@
 
 .page__container {
   padding: 0 20px;
+  background-image: var(--url-header-img);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
 }
 
 .header {
@@ -18,7 +23,7 @@
   display: grid;
   grid-template-rows: 1fr min-content 1fr;
   margin-bottom: 60px;
-  padding-top: 20px;
+  padding-top: 20px;  
 }
 
 .rec {
@@ -41,7 +46,6 @@
   block-size: 9px;
   border-radius: 50%;
   background-color: var(--button-color);
-  fill: var(--button-color);
   filter: drop-shadow(0px 0px 4px var(--button-color));
 }
 
@@ -151,6 +155,12 @@
     flex-direction: column;
     align-items: flex-end;
     gap: 13px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .header-text {
+    transform: translateY(10px);
   }
 }
 

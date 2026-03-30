@@ -1,17 +1,22 @@
 (function initTheme() {
-  const theme = localStorage.getItem('theme');
-  if (theme) {
-    setTheme(theme);
+  const savedTheme = localStorage.getItem('theme');
+
+  if (savedTheme === 'dark' || savedTheme === 'light') {
+    setTheme(savedTheme);
+  } else {
+    setTheme('dark');
   }
 })();
 
 document.addEventListener('DOMContentLoaded', () => {
-  const currentTheme = [...document.documentElement.classList]
+  const themeButtons = [...document.querySelectorAll('.header__theme-menu-button')];
+  let currentTheme = [...document.documentElement.classList]
     .find((cn) => cn.startsWith('theme-'))
     ?.replace('theme-', '');
-  const themeButtons = [
-    ...document.querySelectorAll('.header__theme-menu-button'),
-  ];
+  if (!currentTheme || currentTheme === 'auto') {
+    currentTheme = 'dark';
+  }
+
   setActiveButton(themeButtons, currentTheme);
 
   themeButtons.forEach((button) => {
@@ -19,8 +24,14 @@ document.addEventListener('DOMContentLoaded', () => {
       const chosenTheme = [...button.classList]
         .find((cn) => cn.includes('_type_'))
         .split('_type_')[1];
-      setTheme(chosenTheme);
-      setActiveButton(themeButtons, chosenTheme);
+
+      if (chosenTheme === 'auto') {
+        setTheme('dark');
+        setActiveButton(themeButtons, 'dark');   
+      } else {
+        setTheme(chosenTheme);
+        setActiveButton(themeButtons, chosenTheme);
+      }
     });
   });
 });
@@ -36,17 +47,14 @@ function setActiveButton(buttonsArray, theme) {
     button.classList.remove('header__theme-menu-button_active');
     button.removeAttribute('disabled');
   });
+  const buttonType = (theme === 'dark') ? 'auto' : theme;
+
   const target = buttonsArray.find((button) =>
-    button.classList.contains(`header__theme-menu-button_type_${theme}`)
+    button.classList.contains(`header__theme-menu-button_type_${buttonType}`)
   );
+
   if (target) {
     target.classList.add('header__theme-menu-button_active');
     target.setAttribute('disabled', true);
-  } else {
-    const autoButton = document.querySelector(
-      '.header__theme-menu-button_type_auto'
-    );
-    autoButton.classList.add('header__theme-menu-button_active');
-    autoButton.setAttribute('disabled', true);
   }
 }
