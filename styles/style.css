@@ -420,7 +420,7 @@
 .picture_section {
   max-width: 100%;
   aspect-ratio: 1 / 1.13;
-  margin-block-start: 20px;
+  margin-block-start: 15px;
   width: 100%;
   display: grid;
   grid-template-areas:
@@ -442,6 +442,7 @@
 @media (width >= 1000px) {
   .picture_section {
     aspect-ratio: 1 / 1.06;
+    margin-block-start: 20px;
   }
 }
 
