@@ -44,7 +44,7 @@
     --url-header-img: url(../images/cover-image-light.png);
   }
   
-  .theme-light .rec {
+  .rec {
     display: none;
   }
 }
