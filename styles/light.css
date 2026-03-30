@@ -23,6 +23,26 @@
   --url-header-img: url(../images/cover-image-light.png);
 }
 
+@media (prefers-color-scheme: light) {
+  :root {
+    --h1-text-color: rgba(255, 194, 230, 1);
+  --h1-text-color-shadow: rgba(255, 141, 203, 1);
+
+  --header-text-color: rgba(53, 52, 48, 1);
+
+  --background-p-color: rgba(255, 141, 203, 1);
+  --background-color: rgba(255, 241, 247, 1);
+
+  --link-color-shadow: rgba(255, 141, 203, 1);
+
+  --h2-text-color: rgba(53, 52, 48, 1);
+  --h3-text-color: rgba(53, 52, 48, 1);
+  --p-text-color: rgba(53, 52, 48, 1);
+
+  --url-header-img: url(../images/cover-image-light.png);
+  }
+}
+
 .theme-light .rec {
   display: none;
 }

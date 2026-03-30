@@ -21,7 +21,7 @@
   padding-top: 20px;
 }
 
-.decorative-element {
+.rec {
   position: absolute;
   top: 20px;
   right: 0;
@@ -29,20 +29,20 @@
   align-items: center;
   gap: 10px;
   padding-right: 8px;
-  color: var(--decorative-color);
-  font-family: var(--main-font-reg);
+  color: var(--h2-text-color);
+  font-family: var(--p-text-size);
   text-transform: uppercase;
 }
 
-.decorative-element::after {
+.rec::after {
   display: block;
   content: "";
   inline-size: 9px;
   block-size: 9px;
   border-radius: 50%;
-  background-color: var(--decorative-color);
-  fill: var(--decorative-color);
-  filter: drop-shadow(0px 0px 4px var(--decorative-color));
+  background-color: var(--button-color);
+  fill: var(--button-color);
+  filter: drop-shadow(0px 0px 4px var(--button-color));
 }
 
 .decorated-zone::before {
@@ -77,8 +77,8 @@
 
 .header__theme-menu-button {
   background-color: transparent;
-  font-family: var(--main-font-reg);
-  font-size: var(--main-text-size);
+  font-family: var(--h2-text-font);
+  font-size: var(--p-text-size);
   color: var(--button-color);
   border: none;
   padding: 0 13px;
@@ -103,12 +103,12 @@
 }
 
 .header-title {
-  font-family: var(--main-font-reg);
+  font-family: var(--h1-size-mobile);
   font-weight: bold;
   font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   line-height: 82.5%;
-  text-shadow: 4px 4px 0px var(--accent-color);
-  color: var(--main-title-text-color);
+  text-shadow: 4px 4px 0px var(--background-p-color);
+  color: var(--h1-text-color);
   text-transform: lowercase;
   margin-left: -20px;
 }
@@ -121,10 +121,10 @@
 }
 
 .title-decor {
-  color: var(--on-accent-color);
-  background-color: var(--accent-color);
-  font-family: var(--main-font-reg);
-  font-size: var(--main-text-size);
+  color: var(--h3-text-color);
+  background-color: var(--background-p-color);
+  font-family: var(--p-text-font);
+  font-size: var(--p-text-size);
   font-weight: bold;
 }
 
@@ -136,7 +136,7 @@
   }
 
   .header-title {
-    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+    font-size: var(--h1-size-tablet);
   }
 
   .header-text {
